@@ -41,7 +41,7 @@
     "takeaway": "A direct project reference for studying visual grounding through alignment distillation.",
     "limitations_to_check": "Requires training and a teacher; check compute, exact data splits and repository completeness before choosing it. CT/MRI images in VQA do not establish volumetric 3D input.",
     "reading_priority": 1,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -78,7 +78,7 @@
     "takeaway": "Useful for comparing adaptive preference learning with distillation and inference-time interventions.",
     "limitations_to_check": "Preference-data construction, verifier behavior and LoRA training add dependencies; code URL not identified in the supplied PDF.",
     "reading_priority": 3,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -117,10 +117,10 @@
     ],
     "code_url": null,
     "evidence": "Supplied v1 PDF, Section 3.1 Tasks and Datasets / Evaluation Metrics, Tables 1–2. arXiv metadata checked 2026-10-23.",
-    "takeaway": "A candidate for an inference-based project on medical visual grounding and correction.",
+    "takeaway": "Relevant to medical visual grounding and inference-time hallucination correction.",
     "limitations_to_check": "Training-free still needs model inference, evidence localization and GREEN-derived labels; code release is promised in the abstract, with no confirmed code link.",
     "reading_priority": 1,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -157,7 +157,7 @@
     "takeaway": "A closely related inference-time alternative to CoEV, focused on anatomy-aware decoding.",
     "limitations_to_check": "Annotation-free refers to the proposed mitigation procedure; evaluation still uses labels. Region proposal and repeated inference add cost. Code link is reported by the paper, not execution-verified.",
     "reading_priority": 1,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -192,7 +192,7 @@
     "takeaway": "Motivates token-position and image-ablation controls when evaluating a detector.",
     "limitations_to_check": "General-domain captioning results do not establish medical-domain validity. CHAIR labels have known matching errors. Code URL not identified in supplied PDF.",
     "reading_priority": 2,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -231,7 +231,7 @@
     "takeaway": "Related to causal grounding and interpretability; an alternative project direction.",
     "limitations_to_check": "A classification/intervention paper rather than a medical report-generation method. Mayo data access needs checking; code URL not identified.",
     "reading_priority": 3,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -279,7 +279,7 @@
     "takeaway": "A direct reference for a separate efficiency project and possible later grounding–efficiency analysis.",
     "limitations_to_check": "The supplied PDF includes video experiments, which are not volumetric 3D. arXiv abstract and PDF differ in detail; use the pinned PDF for this record. Abstract mentions future code release; URL not confirmed here.",
     "reading_priority": 2,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -333,7 +333,7 @@
     "takeaway": "An advanced efficiency reference after understanding deterministic pruning baselines.",
     "limitations_to_check": "Training-free model inference does not mean cost-free policy search. Separate search data from final evaluation and check external API cost. Code link reported in PDF, not execution-verified.",
     "reading_priority": 3,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -361,11 +361,11 @@
       "Text-to-vision models"
     ],
     "code_url": null,
-    "evidence": "Supplied ACM Computing Surveys PDF, first-page bibliographic metadata and Sections 3–4. DOI fetch was blocked; metadata transcribed from PDF.",
+    "evidence": "Supplied ACM Computing Surveys PDF, first-page bibliographic metadata and Sections 3–4. Bibliographic metadata from the PDF.",
     "takeaway": "Background vocabulary and taxonomy for structuring the survey.",
     "limitations_to_check": "Do not treat referenced datasets or results as this survey’s own experiments. ACM CSUR 58(13), Article 332, June 2026.",
     "reading_priority": 1,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -393,11 +393,11 @@
       "Multiple LLM and reasoning-model families"
     ],
     "code_url": "https://github.com/mbzuai-oryx/Awesome-LLM-Post-training",
-    "evidence": "Supplied IEEE TPAMI PDF, first page, method taxonomy, Section V. Online DOI fetch unavailable; bibliographic dates taken from PDF.",
+    "evidence": "Supplied IEEE TPAMI PDF, first page, method taxonomy, Section V. Bibliographic dates from the PDF.",
     "takeaway": "Background for understanding DPO, RL and test-time computation before reading DEPO.",
     "limitations_to_check": "Not a 2D/3D medical imaging experiment. PDF gives online publication 2026-08-04 and November 2026 issue; use 2026, without implying November has passed.",
     "reading_priority": 2,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   },
@@ -435,7 +435,7 @@
     "takeaway": "Broad context for task selection; the mixed 3D coverage should not be attributed to the other papers.",
     "limitations_to_check": "Background benchmark study rather than a direct medical hallucination method. Full list of 55 benchmarks remains a clearly tracked extraction task. Code link reported by PDF, not execution-verified.",
     "reading_priority": 3,
-    "reading_status": "AI-assisted initial extraction; author review pending",
+    "reading_status": "To review",
     "reproduced": false,
     "extracted_on": "2026-10-23"
   }

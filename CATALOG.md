@@ -1,6 +1,6 @@
 # Paper comparison
 
-Generated from `papers.json`. Initial extraction, not a record of reproduction.
+Papers organized by year, datasets, input dimensions, evaluated tasks and metrics.
 
 | ID | Year | Paper | Data / benchmarks | Input dimension | Evaluated tasks | Metrics |
 |---|---|---|---|---|---|---|

@@ -1,36 +1,40 @@
 # Survey paper collection
 
-A working literature collection for Kishan’s supervisor discussion. Initial scope: medical vision-language hallucination and grounding, with separate efficiency and background tracks. The final survey scope is still to be agreed with the supervisor.
+I collect papers here on vision-language hallucination, visual grounding and medical VLMs. I also include related work on visual token pruning and generative AI.
 
-**11 supplied papers indexed: 1 from 2025 and 10 from 2026.** Metadata and experiment descriptions were initially extracted with AI assistance on 23 October 2026. These are starting notes for human review; no experiments have been reproduced.
+The collection currently has **11 papers: 1 from 2025 and 10 from 2026**.
 
-## Browse
+## Browse the papers
 
-- [Full comparison](CATALOG.md) — year, data, dimensionality, evaluated tasks and metrics.
+- [Full comparison](CATALOG.md): year, datasets, input dimensions, tasks and metrics.
 - [By year](BY_YEAR.md), [topic](BY_TOPIC.md), [dimension](BY_DIMENSION.md), [dataset](BY_DATASET.md) and [task](BY_TASK.md).
-- [CSV spreadsheet](papers.csv) and [structured source data](papers.json).
-- [Paper notes](notes/) and [reading workflow](READING_WORKFLOW.md).
+- [CSV file](papers.csv) and [structured records](papers.json).
+- [Paper notes](notes/) and [reading checklist](READING_WORKFLOW.md).
 
-## Classification rules
+## How I classify papers
 
-- **2D** means image/slice input in the evaluated setup. A CT or MRI source does not automatically mean the method consumes full 3D volumes.
-- **Video** is temporal image input; it is not automatically volumetric 3D.
-- **Mixed** describes the broad benchmark paper covering 2D, 3D/multiview and video tasks.
-- **N/A** applies to surveys with no single original experimental dataset.
-- Dataset names refer to evaluation unless a record says otherwise; training-data details need separate review before reproduction.
-- Missing code links mean “not identified in the supplied PDF,” not proof that no code exists. Linked code has not been run.
+- **2D:** the method uses images or individual slices. A CT or MRI source does not automatically mean full 3D volume input.
+- **Video:** the method uses a sequence of frames.
+- **Mixed:** the paper covers several input types, including 2D, 3D/multiview or video.
+- **N/A:** a survey without one original experimental dataset.
 
-## Sources and local PDFs
+Dataset entries describe evaluation data unless stated otherwise. I keep code links and source sections in each paper note. Missing code links mean I have not identified a link in the source record.
 
-Each paper card records the original filename and evidence sections. The source PDFs remain in the parent `Research paper` folder locally. This repository contains metadata, original notes and source links; the PDFs and books are not copied into it. It therefore remains usable after publication without links that depend on the parent directory.
+## Sources
 
-Official arXiv pages, ACL Anthology and the MedAlign author repository were checked on 23 October 2026. ACM/IEEE DOI pages were inaccessible to the browsing tool; those records explicitly rely on the supplied PDFs. arXiv records are pinned to the local PDF version where available. Later versions may differ.
+The records use the local PDFs and links to arXiv, ACL Anthology, publisher pages and author repositories. Version numbers and source sections are included where available. The repository contains paper records and notes; the PDFs remain in my local paper folder.
 
-## Update
+Reading status and reproduction status are tracked separately. A catalogue entry does not mean I have run the paper's experiments.
 
-1. Add or correct a record in `papers.json`, including evidence locations and uncertainties.
-2. Run `python3 scripts/render_catalog.py`.
-3. Edit the corresponding note in `notes/` with your own understanding; existing note cards are preserved by the generator. If metadata changes, update its note card too.
-4. Commit the changed catalogue and notes.
+## Updating the collection
 
-Next extraction gaps: all 55 benchmarks in P11; exact training data, splits and compute for each experimental method; reproduction status and numerical results with exact table rows.
+1. Add or update a record in `papers.json`.
+2. Run `python3 scripts/render_catalog.py` to refresh the comparison, CSV and category pages.
+3. Add my own reading notes in `notes/`. Existing notes are kept when the catalogue is regenerated.
+4. Commit and push the changes.
+
+## To review
+
+- Complete the benchmark list for P11.
+- Check training data, splits and compute requirements for the experimental papers.
+- Add result-table references as I read each paper in detail.

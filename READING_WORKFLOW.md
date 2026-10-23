@@ -1,29 +1,27 @@
-# Reading and supervisor review
+# Reading checklist
 
-## Suggested first pass
+## Reading order
 
-1. P09: read the introduction and taxonomy to learn the vocabulary.
-2. P01: identify the medical alignment problem and the teacher/student setup.
-3. P03 and P04: compare counter-evidence verification with anatomical decoding.
-4. P05: identify shortcuts and controls that a good evaluation must include.
-5. P07, then P08: follow the separate efficiency track if it matches the project discussion.
-6. P10 supports learning DPO/RL; P02 is a more involved training-based reference. P06 and P11 broaden the options.
+1. P09 for hallucination definitions and causes.
+2. P01 for visual alignment in medical VLMs.
+3. P03 and P04 for counter-evidence and anatomy-guided decoding.
+4. P05 for shortcuts and robustness in hallucination detection.
+5. P07 and P08 for visual token pruning.
+6. P10 and P02 for post-training and preference optimization; P06 and P11 for related context.
 
-This order is a planning suggestion based on the supplied collection, not the supervisor’s chosen project.
+## Notes for each paper
 
-## For each paper
+- Explain the problem, inputs, outputs and method in my own words.
+- Check the paper version, training/test data, splits and input dimensions.
+- Record the model, dataset, metric, baseline and table reference for important results.
+- Understand one figure or equation.
+- Check code availability, model access and GPU requirements.
+- Write down limitations and questions.
+- Mark a paper as reproduced only after recording the command, environment, seed and measured output.
 
-- Explain the problem, inputs, outputs and method in five sentences.
-- Confirm the year and version, training versus test data, split sizes and input dimension.
-- Record one important result with model, dataset, metric, baseline and exact table/row. Keep different setups separate.
-- Explain one figure or equation without copying the abstract.
-- Check code, model access, dataset access and available GPU memory.
-- Write one limitation and one question for the supervisor.
-- Mark “reproduced” only after recording the command, environment, seed and actual output.
+## Questions to check
 
-## Questions for the next meeting
-
-- Should the survey focus on medical VLM hallucinations, general VLM grounding, efficiency, or another agreed scope?
-- Which datasets and GPU resources are available?
-- Is the first deliverable an evaluation baseline, a reproduction, or a new method?
-- Which project direction should be shortlisted for the January 2027 discussion?
+- Does the method use image evidence or mainly language shortcuts?
+- Is the evaluation comparable across methods?
+- Are the data and model accessible?
+- Does the method improve grounding as well as the reported task score?
