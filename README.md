@@ -22,19 +22,7 @@ Dataset entries describe evaluation data unless stated otherwise. I keep code li
 
 ## Sources
 
-The records use the local PDFs and links to arXiv, ACL Anthology, publisher pages and author repositories. Version numbers and source sections are included where available. The repository contains paper records and notes; the PDFs remain in my local paper folder.
+The records use the local PDFs and links to arXiv, ACL Anthology, publisher pages and author repositories. Version numbers and source sections are included where available. The repository contains paper records and notes.
 
-Reading status and reproduction status are tracked separately. A catalogue entry does not mean I have run the paper's experiments.
-
-## Updating the collection
-
-1. Add or update a record in `papers.json`.
-2. Run `python3 scripts/render_catalog.py` to refresh the comparison, CSV and category pages.
-3. Add my own reading notes in `notes/`. Existing notes are kept when the catalogue is regenerated.
-4. Commit and push the changes.
-
-## To review
-
-- Complete the benchmark list for P11.
 - Check training data, splits and compute requirements for the experimental papers.
 - Add result-table references as I read each paper in detail.
